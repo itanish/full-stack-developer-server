@@ -4,6 +4,9 @@ import helloController
 import userController from "./controllers/user-controller.js";
 import tuitController from "./controllers/tuits-controller.js";
 import cors from 'cors';
+import mongoose from "mongoose";
+
+mongoose.connect('mongodb+srv://root:supersecretpassword@cluster0.jos1t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 const app = express();
 
@@ -16,5 +19,5 @@ helloController(app);
 userController(app);
 tuitController(app);
 
-app.listen(4000);
+app.listen(4001);
 
