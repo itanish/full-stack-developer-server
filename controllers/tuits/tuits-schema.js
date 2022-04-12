@@ -18,6 +18,5 @@ const schema = mongoose.Schema({
                                        retuits: Number,
                                        likes: Number
                                    }
-
                                }, {collection: 'allTuits'});
 export default schema;
