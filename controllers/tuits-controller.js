@@ -45,15 +45,13 @@ const updateTuit = async (req, res) => {
 
     const status = await updateTuitDao(tuitdIdToUpdate, updatedTuit);
     // tuits = tuits.map(t => t._id === tuitdIdToUpdate ? updatedTuit : t);
-    res.sendStatus(status);
+    res.send(status);
 
 }
-
 const deleteTuit = async (req, res) => {
     const tuitdIdToDelete = req.params.tid;
     const status = await deleteTuitDao(tuitdIdToDelete);
-    // tuits = tuits.filter(t => t._id !== tuitdIdToDelete);
-    res.sendStatus(status);
+    res.send(status);
 
 }
 
