@@ -16,6 +16,7 @@ const createUser = (req, res) => {
     res.json(newUser);
 }
 
+
 const deleteUser = (req, res) => {
     const userId = req.params['uid'];
     users = users.filter(usr =>
