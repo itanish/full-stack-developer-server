@@ -18,13 +18,14 @@ const createTuit = async (req, res) => {
     newTuit.postedBy = {
         "username": "Tanish Sehgal"
     };
-    newTuit.handle = "tanishsehgal"
+    newTuit.handle = "tanishsehgal";
     newTuit.time = "Just Now";
     newTuit.stats = {
         retuits: 111,
             likes: 222,
             comments: 333
     }
+    newTuit.topic = "";
 
     const insertedTuit = await createTuitDao(newTuit);
 
